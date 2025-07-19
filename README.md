@@ -4,7 +4,7 @@ This folder contains custom Lua scripts for Aseprite. Put your scripts here and 
 
 ## Available Scripts
 
-### 🎯 autoTile.lua
+### 🎯 autoTile.lua AI
 **Auto-Tile Generation Script**
 - Opens an image file and downsample it to a specified size (default: 192x192)
 - Automatically detects connected pixel regions using flood fill algorithms
@@ -12,7 +12,7 @@ This folder contains custom Lua scripts for Aseprite. Put your scripts here and 
 - Perfect for creating individual tiles from a single source image
 - Supports PNG, ASE, BMP, and GIF formats
 
-### 🔧 combineTileSet.lua
+### 🔧 combineTileSet.lua AI
 **Tileset Layer Combiner**
 - Combines multiple tileset layers into a single larger tileset layer
 - Arranges tilesets in an optimal grid pattern (tries to maintain square aspect ratio)
@@ -20,15 +20,16 @@ This folder contains custom Lua scripts for Aseprite. Put your scripts here and 
 - Ideal for Unity tilemaps or other game engines that prefer consolidated tilesets
 - Requires at least 2 tileset layers to operate
 
-### 🌫️ gussianblur.lua
+### 🌫️ gussianblur.lua AI
 **Powerful Blur Effect**
 - Applies customizable blur effects to the current image layer
 - Uses box blur algorithm with configurable radius and iterations
 - Interactive dialog with real-time preview options
 - Supports RGB and Grayscale color modes
 - Great for creating soft shadows, glows, or atmospheric effects
+- incredibly slow lol eventually works 
 
-### 🎨 selectionToNoTransparent.lua
+### 🎨 selectionToNoTransparent.lua AI
 **Selection Alpha Fixer**
 - Sets all pixels in the current selection to full opacity (alpha = 1.0)
 - Works with both regular image layers and tilemap layers
@@ -36,7 +37,7 @@ This folder contains custom Lua scripts for Aseprite. Put your scripts here and 
 - Useful for fixing semi-transparent pixels or cleaning up imported graphics
 - Requires an active selection to operate
 
-### 📋 spiteSheetToLayers.lua
+### 📋 spiteSheetToLayers.lua AI
 **Sprite Sheet Separator**
 - Breaks down sprite sheets into individual layers based on connected pixel regions
 - Uses configurable grid size to organize the separation process
@@ -47,7 +48,9 @@ This folder contains custom Lua scripts for Aseprite. Put your scripts here and 
 ## Usage
 
 1. Place any `.lua` script in this directory
-2. Restart Aseprite
+2. Refresh scripts via menu or restart Aseprite
+   - To refresh without restarting, go to **File > Scripts > Refresh Scripts**
+   - Alternatively, you can restart Aseprite to load new scripts 
 3. Access scripts via **File > Scripts > [Script Name]**
 4. Follow the dialog prompts for each script's specific options
 
