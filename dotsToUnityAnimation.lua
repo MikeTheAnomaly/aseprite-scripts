@@ -62,7 +62,7 @@ local function findGreenDotPosition(image)
         local a = pc.rgbaA(pixelValue)
         
         -- Check if it's a bright green pixel (allowing for slight variations)
-        if r == 0 and g == 255 and b == 0 and a > 200 then
+        if r < 150 and g > 150 and b < 150 and a > 200 then
             return { x = it.x, y = it.y }
         end
     end
@@ -90,7 +90,7 @@ local function findBlueDotPosition(image)
         local a = pc.rgbaA(pixelValue)
         
         -- Check if it's a bright blue pixel (allowing for slight variations)
-        if r == 0 and g == 0 and b == 255 and a > 200 then
+        if r < 150 and g < 150 and b > 150 and a > 200 then
             return { x = it.x, y = it.y }
         end
     end
