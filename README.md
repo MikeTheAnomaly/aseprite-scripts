@@ -45,6 +45,14 @@ This folder contains custom Lua scripts for Aseprite. Put your scripts here and 
 - Employs flood fill detection to identify connected components within grid cells
 - Perfect for separating character animations or tile collections from sprite sheets
 
+### 📤 spriteSheetExportTiles.lua AI
+**Sprite Sheet Grid Exporter**
+- Slices a sprite sheet into fixed-size tiles using width/height inputs
+- Exports tiles as numbered PNGs in the source folder
+- Optional skip for fully transparent tiles
+- Names files with the source basename and a custom prefix
+- Ignores any remainder area smaller than the chosen tile size
+
 ## Usage
 
 1. Place any `.lua` script in this directory
